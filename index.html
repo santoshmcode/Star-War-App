@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Star War App</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="//fonts.googleapis.com/css?family=Akaya Telivigala&subset=latin"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+    <body>
+        <div id="container">
+            <div id="logo">
+                <img
+                    src="https://cdn.freebiesupply.com/logos/large/2x/star-wars-4-logo-svg-vector.svg"
+                    alt="star wars logo"
+                />
+            </div>
+            <div id="input-container">
+                <div id="search-field">
+                    <input
+                        oninput="throttelFunction()"
+                        type="text"
+                        id="input"
+                        placeholder="Search for Name"
+                    />
+                    <div id="x">
+                        <img
+                            id="x-icon"
+                            class="hide"
+                            src="https://urban-piper-starwars.vercel.app/static/media/cancel.2ca824d3.svg"
+                            alt="x"
+                        />
+                        <div id="search">
+                            <img
+                                id="search-img"
+                                src="https://urban-piper-starwars.vercel.app/static/media/search.03bb87e7.svg"
+                                alt="search"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div id="append"></div>
+            </div>
+        </div>
+        <div id="data-main-container" class="hide">
+            <div id="data-page-container">
+                <div>
+                    <div>Name</div>
+                    <div id="data-name"></div>
+                </div>
+                <div>
+                    <div>Birth Year</div>
+                    <div id="data-birth_year"></div>
+                </div>
+                <div>
+                    <div>Gender</div>
+                    <div id="data-gender"></div>
+                </div>
+                <div>
+                    <div>Height</div>
+                    <div id="data-height"></div>
+                </div>
+                <div>
+                    <div>Mass</div>
+                    <div id="data-mass"></div>
+                </div>
+                <div>
+                    <div>Eye Color</div>
+                    <div id="data-eye_color"></div>
+                </div>
+                <div>
+                    <div>Hair Color</div>
+                    <div id="data-hair_color"></div>
+                </div>
+                <div>
+                    <div>Skin Color</div>
+                    <div id="data-skin_color"></div>
+                </div>
+            </div>
+            <div id="back-btn">⇦BACK</div>
+        </div>
+    </body>
+</html>
+<script src="script.js"></script>
